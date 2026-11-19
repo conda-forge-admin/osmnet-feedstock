@@ -1,4 +1,4 @@
-{% set version = "0.1.7" %}
+{% set version = "0.2" %}
 
 package:
   name: osmnet
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/o/osmnet/osmnet-{{ version }}.tar.gz
-  sha256: 21f856ea4cc63c15fc7dc65dce7db8cd3f01c58f0b09d8cc9e860496bd0a419a
+  sha256: 2876f08f19d27448407d04862d557fe256dabadebcf50b94fccc263362c13185
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
